@@ -19,4 +19,8 @@
             conn.Close()
         End Try
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Application.Exit()
+    End Sub
 End Class
