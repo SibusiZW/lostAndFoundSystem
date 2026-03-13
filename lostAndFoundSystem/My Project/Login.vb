@@ -10,6 +10,9 @@
 
             If count > 0 Then
                 MessageBox.Show("Logged In", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                main.Show()
+                Me.Close()
+                Return
             Else
                 MessageBox.Show("Wrong credentials", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -18,6 +21,8 @@
         Finally
             conn.Close()
         End Try
+        Guna2TextBox1.Clear()
+        Guna2TextBox2.Clear()
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
